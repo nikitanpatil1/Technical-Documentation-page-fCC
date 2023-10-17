@@ -1,0 +1,90 @@
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+/* @media (min-width: 640px) {} */
+
+/* md */
+/* @media (min-width: 768px) {} */
+
+/* lg */
+/* @media (min-width: 1024px) {} */
+
+/* xl */
+/* @media (min-width: 1280px) {} */
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */
+
+:root{
+    --clr-stone50:#fafaf9;
+    --clr-stone100:#f5f5f4;
+    --clr-stone200:#e7e5e4;
+    --clr-stone300:#d6d3d1;
+    --clr-stone400:#a8a29e;
+    --clr-stone500:#78716c;
+    --clr-stone600:#57534e;
+    --clr-stone700:#44403c;
+    --clr-stone800:#292524;
+    --clr-stone900:#1c1917;
+    --clr-stone950:#0c0a09;
+
+    
+
+    /* sizes */
+
+    --size-xxs:0.5rem;
+    --size-xs:0.75rem;
+    --size-sm:0.875rem;
+    --size-base:1rem;
+    --size-lg:1.125rem;
+    --size-xl:1.25rem;
+    --size-2xl:1.5rem;
+    --size-3xl:1.875rem;
+    --size-4xl:2.25rem;
+    --size-5xl:3rem;
+    --size-6xl:3.75rem;
+    --size-7xl:4.5rem;
+    --size-8xl:6rem;
+    --size-9xl:8rem;
+    --size-10xl:10rem;
+}
+
+*,
+::before,
+::after{
+    box-sizing: border-box;
+    margin: 0;
+    line-height: calc(1em + 0.5rem);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+a{
+    color: var(--clr-stone600);
+}
+a:hover{
+    font-weight: 700;
+}
+
+strong{
+    color: var(--clr-stone600);
+}
+
+
+/* scrollbar */
+
+body::-webkit-scrollbar {
+    width: 8px;
+}
+ 
+body::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 0px rgba(0, 0, 0, 0);
+}
+   
+body::-webkit-scrollbar-thumb {
+    background-color: var(--clr-stone800);
+    outline: 1px solid slategrey;
+}

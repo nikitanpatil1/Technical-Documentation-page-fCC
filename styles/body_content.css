@@ -1,0 +1,263 @@
+body{
+    font-family: 'General Sans', sans-serif;
+    background-color: var(--clr-stone200);
+    color: var(--clr-stone950);
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+#navbar{
+    width: 100vw;
+    background-color: var(--clr-stone900);    
+}
+
+.nav__title{
+    font-size: var(--size-xl);
+    font-weight: 600;
+    color: var(--clr-stone300);
+    margin: 0.5rem;
+    padding: 1.5rem;
+}
+
+.nav__list{
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+}
+
+.nav__list-item{
+    padding: 1rem 2rem;
+    border-top: 2px solid var(--clr-stone400);   
+    transition: all 0.3s;
+}
+
+.nav__list-item:hover{
+    background-color: var(--clr-stone400);  
+}
+
+.nav-link{
+    color: var(--clr-stone300);
+    font-size: var(--size-base);
+    text-decoration: none; 
+    transition: all 0.2s;     
+}
+
+.nav-link:hover{
+    color: var(--clr-stone900);
+    font-weight: 700;
+}
+
+#main-doc{
+    width: 100vw;
+    padding: 2rem;
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main-section{
+    color: var(--clr-stone950);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.main-section__heading{
+    font-size: var(--size-2xl);
+    font-weight: 500;
+}
+
+.main-section__description{
+    font-size: var(--size-sm);
+}
+
+.main-section__list{
+    font-size: var(--size-sm);
+    
+}
+
+li::marker{
+    color: var(--clr-stone600);
+    font-weight: 500;   
+}
+
+code{
+    font-size: var(--size-xs);
+    padding: 0.1rem;
+    border-radius: 5px;
+    background-color: var(--clr-stone300);
+}
+
+pre code {
+    display: block;
+    text-align: left;
+    white-space: pre-line;
+    position: relative;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 2;
+    background-color: var(--clr-stone300);
+    padding: 15px;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+#Different_types_of_selectors ol,
+#Fonts_and_text ol{
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+}
+
+#main-doc ol, ul{
+    padding-left: 1.5rem;
+}
+
+#main-doc ul{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;  
+}
+
+.name{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+
+/* xs */
+/* @media (min-width: 475px) {} */
+
+/* sm */
+@media (min-width: 640px) {
+  
+    .nav__title{
+        font-size: var(--size-2xl);
+    }
+ 
+    .nav-link{
+        font-size: var(--size-lg);   
+    }
+    
+    .main-section__heading{
+        font-size: var(--size-3xl);
+    }
+    
+    .main-section__description{
+        font-size: var(--size-base);
+    }
+    
+    .main-section__list{
+        font-size: var(--size-base);
+        
+    }
+ 
+}
+
+/* md */
+@media (min-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #navbar{
+        height: 100vh;
+        width: 26%;
+        border-right: 2px solid var(--clr-stone400);
+        position: fixed;
+        top: 0;
+        left: 0;
+        
+    }
+    
+    .nav__title{
+        font-size: var(--size-2xl);
+        margin: 0.1rem;
+        padding: 1.5rem 0.4rem;
+    }
+    
+    
+    #main-doc{
+        width: 74%;
+        margin-left: 26%;
+    }
+       
+}
+
+/* lg */
+@media (min-width: 1024px) {
+   
+   
+    .nav__title{
+        font-size: var(--size-3xl);
+       
+    }
+    
+
+    .nav-link{
+        font-size: var(--size-xl);   
+    }
+    
+    .main-section__heading{
+        font-size: var(--size-4xl);
+    }
+    
+    .main-section__description{
+        font-size: var(--size-lg);
+    }
+    
+    .main-section__list{
+        font-size: var(--size-lg);
+        
+    }
+
+    code{
+        font-size: var(--size-sm);
+    }
+
+    #main-doc{
+        width: 72%;
+        margin-left: 28%;
+        margin-right: 2%;
+    }
+       
+}
+
+/* xl */
+@media (min-width: 1280px) {
+ 
+    .nav__title{
+        font-size: var(--size-4xl);
+    }
+    
+ 
+    .nav-link{
+        font-size: var(--size-2xl);   
+    }
+    
+    .main-section__heading{
+        font-size: var(--size-5xl);
+    }
+    
+    .main-section__description{
+        font-size: var(--size-xl);
+    }
+    
+    .main-section__list{
+        font-size: var(--size-xl);
+        
+    }
+
+    #main-doc{
+        width: 70%;
+        margin-left: 30%;
+        margin-right: 4%;
+    }
+}
+
+/* 2xl */
+/* @media (min-width: 1536px) {} */   
+
